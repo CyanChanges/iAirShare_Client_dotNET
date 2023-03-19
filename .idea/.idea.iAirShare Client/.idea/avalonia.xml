@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="iAirShare Client/App.axaml" value="iAirShare Client/iAirShare Client.csproj" />
+        <entry key="iAirShare Client/Views/MainWindow.axaml" value="iAirShare Client/iAirShare Client.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

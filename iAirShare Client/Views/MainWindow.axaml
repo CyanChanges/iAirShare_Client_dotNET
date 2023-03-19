@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:iAirShare_Client.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iairshare="clr-namespace:iAirShare_Client.iAirShare"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="iAirShare_Client.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="iAirShare_Client">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Window.Resources>
+        <iairshare:TimestampConverter x:Key="TimestampConverter" />
+        <iairshare:ByteSizeConverter x:Key="SizeConverter" />
+    </Window.Resources>
+
+    <ListBox Items="{Binding FileList}" DoubleTapped="InputElement_OnDoubleTapped">
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="{Binding file_name}" />
+                    <TextBlock Grid.Column="1"
+                               Text="{Binding file_property.file_size, 
+                               Converter={StaticResource SizeConverter}}" />
+                    <TextBlock Grid.Column="2"
+                               Text="{Binding file_property.last_update, 
+                               Converter={StaticResource TimestampConverter}, 
+                               ConverterParameter='yyyy-MM-dd HH:mm:ss'}" />
+                </Grid>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+</Window>
