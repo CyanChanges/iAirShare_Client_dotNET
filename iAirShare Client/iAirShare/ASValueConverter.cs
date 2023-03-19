@@ -48,7 +48,7 @@ public class ByteSizeConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        if (value is long bytes2)
+        if (value is ulong bytes2)
         {
             string[] suffixes = { "Byte(s)", "KiB", "MiB", "GiB", "TiB", "PiB" };
             var counter = 0;
