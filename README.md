@@ -4,5 +4,5 @@ cross-platform iAirShare Client using CSharp with .NET Core.
 # Build
 Coming soon...  
 
-#Installion
+# Installion
 Coming soon...  
