@@ -46,10 +46,6 @@
               "target": "Package",
               "version": "[0.10.18, )"
             },
-            "Avalonia.Diagnostics": {
-              "target": "Package",
-              "version": "[0.10.18, )"
-            },
             "Avalonia.ReactiveUI": {
               "target": "Package",
               "version": "[0.10.18, )"
@@ -77,6 +73,10 @@
             "System.Runtime.Extensions": {
               "target": "Package",
               "version": "[4.3.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.5, )"
             },
             "XamlNameReferenceGenerator": {
               "target": "Package",
