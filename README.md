@@ -1,8 +1,9 @@
-# iAirShare_Client_dotNET
+# iAirShare Client (.NET)
 cross-platform iAirShare Client using CSharp with .NET Core.
 
 # Build
-Coming soon...  
+    git clone https://github.com/Chinese-Cyq20100313/iAirShare_Client_dotNET.git
+    dotnet build
 
 # Installion
-Coming soon...  
+    Download from Releases
