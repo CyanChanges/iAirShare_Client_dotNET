@@ -74,10 +74,6 @@
               "target": "Package",
               "version": "[4.3.1, )"
             },
-            "Xamarin.Essentials": {
-              "target": "Package",
-              "version": "[1.7.5, )"
-            },
             "XamlNameReferenceGenerator": {
               "target": "Package",
               "version": "[1.6.1, )"

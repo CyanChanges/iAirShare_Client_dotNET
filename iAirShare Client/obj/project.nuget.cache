@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pJOxme70uJOpkJytVPDlMQ5AIr2xLnxqYjh1Orz9hdrfG1RL8WkgH+AtPa16w9T0fn9ilSfNs07h/qhojq1FYw==",
+  "dgSpecHash": "ipoOZjv5ImI0Rf8PNhOZY36MTQnFmM+goNQyBCSRhE8DV+KnQ2wHlbfLjhgdraSCdlNSd8Ydiya3863FgyGZIQ==",
   "success": true,
   "projectFilePath": "/home/cyan/RiderProjects/iAirShare Client/iAirShare Client/iAirShare Client.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,6 @@
     "/home/cyan/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/home/cyan/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
     "/home/cyan/.nuget/packages/tmds.dbus/0.9.0/tmds.dbus.0.9.0.nupkg.sha512",
-    "/home/cyan/.nuget/packages/xamarin.essentials/1.7.5/xamarin.essentials.1.7.5.nupkg.sha512",
     "/home/cyan/.nuget/packages/xamlnamereferencegenerator/1.6.1/xamlnamereferencegenerator.1.6.1.nupkg.sha512",
     "/home/cyan/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.4/microsoft.aspnetcore.app.ref.7.0.4.nupkg.sha512"
   ],

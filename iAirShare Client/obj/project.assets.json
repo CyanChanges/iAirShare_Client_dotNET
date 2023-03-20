@@ -985,22 +985,6 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.5": {
-        "type": "package",
-        "dependencies": {
-          "System.Numerics.Vectors": "4.5.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Xamarin.Essentials.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Xamarin.Essentials.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
       "XamlNameReferenceGenerator/1.6.1": {
         "type": "package",
         "build": {
@@ -3130,48 +3114,6 @@
         "tmds.dbus.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.7.5": {
-      "sha512": "+dDLUCXOehBxFOw5D5AXeFtcLQ0HBCMeVHSSbonVuZWJ2/8mb7+pGFQA8n053Lvpie7CAd8C+05chIKK6YCBiw==",
-      "type": "package",
-      "path": "xamarin.essentials/1.7.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "icon.png",
-        "lib/monoandroid10.0/Xamarin.Essentials.dll",
-        "lib/monoandroid10.0/Xamarin.Essentials.pdb",
-        "lib/monoandroid10.0/Xamarin.Essentials.xml",
-        "lib/netstandard1.0/Xamarin.Essentials.dll",
-        "lib/netstandard1.0/Xamarin.Essentials.pdb",
-        "lib/netstandard1.0/Xamarin.Essentials.xml",
-        "lib/netstandard2.0/Xamarin.Essentials.dll",
-        "lib/netstandard2.0/Xamarin.Essentials.pdb",
-        "lib/netstandard2.0/Xamarin.Essentials.xml",
-        "lib/tizen40/Xamarin.Essentials.dll",
-        "lib/tizen40/Xamarin.Essentials.pdb",
-        "lib/tizen40/Xamarin.Essentials.xml",
-        "lib/uap10.0.16299/Xamarin.Essentials.dll",
-        "lib/uap10.0.16299/Xamarin.Essentials.pdb",
-        "lib/uap10.0.16299/Xamarin.Essentials.pri",
-        "lib/uap10.0.16299/Xamarin.Essentials.xml",
-        "lib/xamarinios10/Xamarin.Essentials.dll",
-        "lib/xamarinios10/Xamarin.Essentials.pdb",
-        "lib/xamarinios10/Xamarin.Essentials.xml",
-        "lib/xamarinmac20/Xamarin.Essentials.dll",
-        "lib/xamarinmac20/Xamarin.Essentials.pdb",
-        "lib/xamarinmac20/Xamarin.Essentials.xml",
-        "lib/xamarintvos10/Xamarin.Essentials.dll",
-        "lib/xamarintvos10/Xamarin.Essentials.pdb",
-        "lib/xamarintvos10/Xamarin.Essentials.xml",
-        "lib/xamarinwatchos10/Xamarin.Essentials.dll",
-        "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
-        "lib/xamarinwatchos10/Xamarin.Essentials.xml",
-        "readme.txt",
-        "xamarin.essentials.1.7.5.nupkg.sha512",
-        "xamarin.essentials.nuspec"
-      ]
-    },
     "XamlNameReferenceGenerator/1.6.1": {
       "sha512": "0LIETu9UzdHK8K/PmPn69dKtrjoPD1xz9eUPFjpRxn+O/YKY4UwjOILtthWh0HfM/Jcz+qTgoAMwde7SdFEHUg==",
       "type": "package",
@@ -3198,7 +3140,6 @@
       "FluentIcons.FluentAvalonia >= 1.1.181.1",
       "Newtonsoft.Json >= 13.0.3",
       "System.Runtime.Extensions >= 4.3.1",
-      "Xamarin.Essentials >= 1.7.5",
       "XamlNameReferenceGenerator >= 1.6.1"
     ]
   },
@@ -3274,10 +3215,6 @@
           "System.Runtime.Extensions": {
             "target": "Package",
             "version": "[4.3.1, )"
-          },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[1.7.5, )"
           },
           "XamlNameReferenceGenerator": {
             "target": "Package",
