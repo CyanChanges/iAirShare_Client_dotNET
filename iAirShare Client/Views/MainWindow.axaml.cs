@@ -48,7 +48,7 @@ public partial class MainWindow : Window
                 Console.WriteLine($"Download Complete!");
             };
             
-            webClient.DownloadFileAsync(this.client.GetFileUriBuilder("").Uri, ((sender as ListBox).SelectedItem as ASFile?)?.file_name);
+            webClient.DownloadFileAsync(this.client.GetFileUriBuilder(((sender as ListBox).SelectedItem as ASFile?)?.file_name).Uri, ((sender as ListBox).SelectedItem as ASFile?)?.file_name);
         }
     }
 }
