@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using iAirShare_Client.iAirShare;
@@ -33,7 +34,21 @@ public partial class MainWindow : Window
         }
         else
         {
-            throw new NotImplementedException("Open File Not Implemented");
+            // throw new NotImplementedException("Open File Not Implemented");
+
+            var webClient = new WebClient();
+
+            webClient.DownloadProgressChanged += (o, args) =>
+            {
+                Console.WriteLine($"Downloaded {args.BytesReceived} of {args.TotalBytesToReceive} " +
+                                  $"({args.BytesReceived / args.TotalBytesToReceive})...");
+            };
+            webClient.DownloadDataCompleted += (o, args) =>
+            {
+                Console.WriteLine($"Download Complete!");
+            };
+            
+            webClient.DownloadFileAsync(this.client.GetFileUriBuilder("").Uri, ((sender as ListBox).SelectedItem as ASFile?)?.file_name);
         }
     }
 }
