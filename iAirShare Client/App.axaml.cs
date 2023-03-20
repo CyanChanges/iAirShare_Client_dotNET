@@ -22,7 +22,7 @@ public class CustomFontManagerImpl : IFontManagerImpl
     private readonly string _defaultFamilyName;
 
     //Load font resources in the project, you can load multiple font resources
-    private readonly Typeface _defaultTypeface = new("Microsoft Yahei");
+    private readonly Typeface _defaultTypeface = new("Noto Sans CJK SC");
 
     public CustomFontManagerImpl()
     {

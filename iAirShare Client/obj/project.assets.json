@@ -350,6 +350,73 @@
           }
         }
       },
+      "FluentAvalonia.FluentIcons/1.2.7": {
+        "type": "package",
+        "dependencies": {
+          "FluentAvaloniaUI": "1.4.5"
+        },
+        "compile": {
+          "lib/net7.0/FluentAvalonia.FluentIcons.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/FluentAvalonia.FluentIcons.dll": {}
+        }
+      },
+      "FluentAvaloniaUI/1.4.5": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "0.10.18",
+          "Avalonia.Controls.DataGrid": "0.10.18",
+          "Avalonia.Desktop": "0.10.18",
+          "MicroCom.CodeGenerator.MSBuild": "0.10.4",
+          "MicroCom.Runtime": "0.10.4"
+        },
+        "compile": {
+          "lib/net6.0/FluentAvalonia.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentAvalonia.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentIcons.Avalonia/1.1.181.1": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "0.10.0",
+          "FluentIcons.Common": "1.1.181.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentIcons.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentIcons.Avalonia.dll": {}
+        }
+      },
+      "FluentIcons.Common/1.1.181.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FluentIcons.Common.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentIcons.Common.dll": {}
+        }
+      },
+      "FluentIcons.FluentAvalonia/1.1.181.1": {
+        "type": "package",
+        "dependencies": {
+          "FluentAvaloniaUI": "1.3.0",
+          "FluentIcons.Common": "1.1.181.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentIcons.FluentAvalonia.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentIcons.FluentAvalonia.dll": {}
+        }
+      },
       "HarfBuzzSharp/2.8.2.1-preview.108": {
         "type": "package",
         "dependencies": {
@@ -462,6 +529,26 @@
           "lib/netstandard1.0/JetBrains.Annotations.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "MicroCom.CodeGenerator.MSBuild/0.10.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/MicroCom.CodeGenerator.MSBuild.props": {},
+          "buildTransitive/MicroCom.CodeGenerator.MSBuild.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MicroCom.CodeGenerator.MSBuild.props": {},
+          "buildMultiTargeting/MicroCom.CodeGenerator.MSBuild.targets": {}
+        }
+      },
+      "MicroCom.Runtime/0.10.4": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/MicroCom.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/MicroCom.Runtime.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/2.9.6": {
@@ -1783,6 +1870,81 @@
         "lib/uap10.0.16299/DynamicData.xml"
       ]
     },
+    "FluentAvalonia.FluentIcons/1.2.7": {
+      "sha512": "mHTDgfdsdjwIn1cfTmbGX2lVKsshwGi1u2ICmkagHc3hLsK313P11CsnVHk+UDSCul08rJy0uCc9M17GJiv2nw==",
+      "type": "package",
+      "path": "fluentavalonia.fluenticons/1.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "fluentavalonia.fluenticons.1.2.7.nupkg.sha512",
+        "fluentavalonia.fluenticons.nuspec",
+        "lib/net7.0/FluentAvalonia.FluentIcons.dll",
+        "lib/netstandard2.0/FluentAvalonia.FluentIcons.dll",
+        "lib/netstandard2.1/FluentAvalonia.FluentIcons.dll"
+      ]
+    },
+    "FluentAvaloniaUI/1.4.5": {
+      "sha512": "NQz5l2oKzkpOzvj4UhAyvaF8uSSpJQKfgHZSguPNfKE9TS36Hi8Szyp35e3lGHrJokVbd54r2layH1pPM9IrsQ==",
+      "type": "package",
+      "path": "fluentavaloniaui/1.4.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentavaloniaui.1.4.5.nupkg.sha512",
+        "fluentavaloniaui.nuspec",
+        "lib/net6.0/FluentAvalonia.dll",
+        "lib/net6.0/FluentAvalonia.xml",
+        "lib/netstandard2.0/FluentAvalonia.dll",
+        "lib/netstandard2.0/FluentAvalonia.xml",
+        "lib/netstandard2.1/FluentAvalonia.dll",
+        "lib/netstandard2.1/FluentAvalonia.xml"
+      ]
+    },
+    "FluentIcons.Avalonia/1.1.181.1": {
+      "sha512": "ugraHDMctgMPnXHysQ8Ja30FH/DLptVDvaVKZTWAyjrfrmfh2noBsnK/Q6z2cQRGx1ITSihkbov+uDkcEQfeGw==",
+      "type": "package",
+      "path": "fluenticons.avalonia/1.1.181.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "fluenticons.avalonia.1.1.181.1.nupkg.sha512",
+        "fluenticons.avalonia.nuspec",
+        "lib/netstandard2.0/FluentIcons.Avalonia.dll"
+      ]
+    },
+    "FluentIcons.Common/1.1.181.1": {
+      "sha512": "PWT2qcXwo10DUl62Hw+irCrZGWvOX5uQUcNomH/lMI59o9dUF6p+dRBqYXRFTB74ODQqTlYGM5J+NPWUdImBcg==",
+      "type": "package",
+      "path": "fluenticons.common/1.1.181.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "fluenticons.common.1.1.181.1.nupkg.sha512",
+        "fluenticons.common.nuspec",
+        "lib/netstandard2.0/FluentIcons.Common.dll"
+      ]
+    },
+    "FluentIcons.FluentAvalonia/1.1.181.1": {
+      "sha512": "5OQgFRTr3JIQhepRTJiPUh/H5W1KGIle0MOM6y/pWragb/n4I8s2DStWx3JzoCIVUxNDCHfMjJfbyeTsh56Ahg==",
+      "type": "package",
+      "path": "fluenticons.fluentavalonia/1.1.181.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "README.md",
+        "fluenticons.fluentavalonia.1.1.181.1.nupkg.sha512",
+        "fluenticons.fluentavalonia.nuspec",
+        "lib/netstandard2.0/FluentIcons.FluentAvalonia.dll"
+      ]
+    },
     "HarfBuzzSharp/2.8.2.1-preview.108": {
       "sha512": "vo2eE1jLvYWrfeghYAzkfHr7GNtWsay2ODfufavz8xReOZ648a2sBggSjTU02DQU5EPBSOhKxDnkqnUVWA8xkg==",
       "type": "package",
@@ -1969,6 +2131,121 @@
         "lib/portable-net4+sl4+wp7+netcore45/JetBrains.Annotations.xml",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/JetBrains.Annotations.dll",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/JetBrains.Annotations.xml"
+      ]
+    },
+    "MicroCom.CodeGenerator.MSBuild/0.10.4": {
+      "sha512": "aG1kLtkgX6lC8qpxVon4OFSCdWYEbQubIg+2/ychWTIFTrDHWFkhcC4YTn0IfGiVCLwh0Yj7eSc8nk5f3UoMKg==",
+      "type": "package",
+      "path": "microcom.codegenerator.msbuild/0.10.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MicroCom.CodeGenerator.MSBuild.props",
+        "build/MicroCom.CodeGenerator.MSBuild.targets",
+        "buildMultiTargeting/MicroCom.CodeGenerator.MSBuild.props",
+        "buildMultiTargeting/MicroCom.CodeGenerator.MSBuild.targets",
+        "buildTransitive/MicroCom.CodeGenerator.MSBuild.props",
+        "buildTransitive/MicroCom.CodeGenerator.MSBuild.targets",
+        "microcom.codegenerator.msbuild.0.10.4.nupkg.sha512",
+        "microcom.codegenerator.msbuild.nuspec",
+        "tools/netstandard2.0/Humanizer.dll",
+        "tools/netstandard2.0/MicroCom.CodeGenerator.MSBuild.dll",
+        "tools/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/netstandard2.0/Microsoft.Build.Framework.dll",
+        "tools/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "tools/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/netstandard2.0/Microsoft.CodeAnalysis.Workspaces.dll",
+        "tools/netstandard2.0/Microsoft.CodeAnalysis.dll",
+        "tools/netstandard2.0/System.Buffers.dll",
+        "tools/netstandard2.0/System.Collections.Immutable.dll",
+        "tools/netstandard2.0/System.Composition.AttributedModel.dll",
+        "tools/netstandard2.0/System.Composition.Convention.dll",
+        "tools/netstandard2.0/System.Composition.Hosting.dll",
+        "tools/netstandard2.0/System.Composition.Runtime.dll",
+        "tools/netstandard2.0/System.Composition.TypedParts.dll",
+        "tools/netstandard2.0/System.IO.Pipelines.dll",
+        "tools/netstandard2.0/System.Linq.Expressions.dll",
+        "tools/netstandard2.0/System.Linq.dll",
+        "tools/netstandard2.0/System.Memory.dll",
+        "tools/netstandard2.0/System.Numerics.Vectors.dll",
+        "tools/netstandard2.0/System.ObjectModel.dll",
+        "tools/netstandard2.0/System.Reflection.Emit.ILGeneration.dll",
+        "tools/netstandard2.0/System.Reflection.Emit.Lightweight.dll",
+        "tools/netstandard2.0/System.Reflection.Emit.dll",
+        "tools/netstandard2.0/System.Reflection.Metadata.dll",
+        "tools/netstandard2.0/System.Reflection.TypeExtensions.dll",
+        "tools/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/netstandard2.0/System.Runtime.Serialization.Primitives.dll",
+        "tools/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "tools/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "tools/netstandard2.0/System.Threading.Thread.dll",
+        "tools/netstandard2.0/System.Threading.dll",
+        "tools/netstandard2.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/cs/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/de/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/es/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/fr/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/it/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/ja/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/ko/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/pl/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/ru/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/tr/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "tools/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
+        "tools/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "tools/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll",
+        "tools/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll"
+      ]
+    },
+    "MicroCom.Runtime/0.10.4": {
+      "sha512": "enc2U+/1UnF3rtocxb5ofcg7cJSmJI4adbYPr8DZa5bQzvhqA/VbjlcalxoqjI3CR2RvM5WWpjKT0p3BriFJjw==",
+      "type": "package",
+      "path": "microcom.runtime/0.10.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/MicroCom.Runtime.dll",
+        "lib/netstandard2.0/MicroCom.Runtime.dll",
+        "microcom.runtime.0.10.4.nupkg.sha512",
+        "microcom.runtime.nuspec"
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/2.9.6": {
@@ -4657,6 +4934,10 @@
       "Avalonia.Desktop >= 0.10.18",
       "Avalonia.Diagnostics >= 0.10.18",
       "Avalonia.ReactiveUI >= 0.10.18",
+      "FluentAvalonia.FluentIcons >= 1.2.7",
+      "FluentAvaloniaUI >= 1.4.5",
+      "FluentIcons.Avalonia >= 1.1.181.1",
+      "FluentIcons.FluentAvalonia >= 1.1.181.1",
       "Newtonsoft.Json >= 13.0.3",
       "System.Runtime.Extensions >= 4.3.1",
       "XamlNameReferenceGenerator >= 1.6.1"
@@ -4714,6 +4995,22 @@
           "Avalonia.ReactiveUI": {
             "target": "Package",
             "version": "[0.10.18, )"
+          },
+          "FluentAvalonia.FluentIcons": {
+            "target": "Package",
+            "version": "[1.2.7, )"
+          },
+          "FluentAvaloniaUI": {
+            "target": "Package",
+            "version": "[1.4.5, )"
+          },
+          "FluentIcons.Avalonia": {
+            "target": "Package",
+            "version": "[1.1.181.1, )"
+          },
+          "FluentIcons.FluentAvalonia": {
+            "target": "Package",
+            "version": "[1.1.181.1, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

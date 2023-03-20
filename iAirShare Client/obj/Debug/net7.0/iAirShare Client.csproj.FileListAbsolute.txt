@@ -132,3 +132,9 @@
 /home/cyan/RiderProjects/iAirShare Client/iAirShare Client/obj/Debug/net7.0/iAirShare Client.genruntimeconfig.cache
 /home/cyan/RiderProjects/iAirShare Client/iAirShare Client/obj/Debug/net7.0/ref/iAirShare Client.dll
 /home/cyan/RiderProjects/iAirShare Client/iAirShare Client/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/cyan/RiderProjects/iAirShare Client/iAirShare Client/bin/Debug/net7.0/FluentAvalonia.FluentIcons.dll
+/home/cyan/RiderProjects/iAirShare Client/iAirShare Client/bin/Debug/net7.0/FluentAvalonia.dll
+/home/cyan/RiderProjects/iAirShare Client/iAirShare Client/bin/Debug/net7.0/FluentIcons.Avalonia.dll
+/home/cyan/RiderProjects/iAirShare Client/iAirShare Client/bin/Debug/net7.0/FluentIcons.Common.dll
+/home/cyan/RiderProjects/iAirShare Client/iAirShare Client/bin/Debug/net7.0/FluentIcons.FluentAvalonia.dll
+/home/cyan/RiderProjects/iAirShare Client/iAirShare Client/bin/Debug/net7.0/MicroCom.Runtime.dll

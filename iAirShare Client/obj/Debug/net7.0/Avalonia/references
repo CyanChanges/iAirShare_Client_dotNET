@@ -27,8 +27,14 @@
 /home/cyan/.nuget/packages/avalonia.win32/0.10.18/lib/netstandard2.0/Avalonia.Win32.dll
 /home/cyan/.nuget/packages/avalonia.x11/0.10.18/lib/netstandard2.0/Avalonia.X11.dll
 /home/cyan/.nuget/packages/dynamicdata/7.1.1/lib/net5.0/DynamicData.dll
+/home/cyan/.nuget/packages/fluentavaloniaui/1.4.5/lib/net6.0/FluentAvalonia.dll
+/home/cyan/.nuget/packages/fluentavalonia.fluenticons/1.2.7/lib/net7.0/FluentAvalonia.FluentIcons.dll
+/home/cyan/.nuget/packages/fluenticons.avalonia/1.1.181.1/lib/netstandard2.0/FluentIcons.Avalonia.dll
+/home/cyan/.nuget/packages/fluenticons.common/1.1.181.1/lib/netstandard2.0/FluentIcons.Common.dll
+/home/cyan/.nuget/packages/fluenticons.fluentavalonia/1.1.181.1/lib/netstandard2.0/FluentIcons.FluentAvalonia.dll
 /home/cyan/.nuget/packages/harfbuzzsharp/2.8.2.1-preview.108/lib/net6.0/HarfBuzzSharp.dll
 /home/cyan/.nuget/packages/jetbrains.annotations/10.3.0/lib/netstandard1.0/JetBrains.Annotations.dll
+/home/cyan/.nuget/packages/microcom.runtime/0.10.4/lib/net5.0/MicroCom.Runtime.dll
 /home/cyan/.nuget/packages/microsoft.codeanalysis.csharp/3.4.0/lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll
 /home/cyan/.nuget/packages/microsoft.codeanalysis.csharp.scripting/3.4.0/lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll
 /home/cyan/.nuget/packages/microsoft.codeanalysis.common/3.4.0/lib/netstandard2.0/Microsoft.CodeAnalysis.dll

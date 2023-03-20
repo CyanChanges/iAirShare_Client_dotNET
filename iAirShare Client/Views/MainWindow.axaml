@@ -4,6 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:iairshare="clr-namespace:iAirShare_Client.iAirShare"
+        xmlns:sty="using:FluentAvalonia.Styling"
+        xmlns:ui="using:FluentAvalonia.UI.Controls"
+        xmlns:uip="using:FluentAvalonia.UI.Controls.Primitives"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="iAirShare_Client.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -20,7 +23,7 @@
         <iairshare:TimestampConverter x:Key="TimestampConverter" />
         <iairshare:ByteSizeConverter x:Key="SizeConverter" />
     </Window.Resources>
-
+    
     <ListBox Items="{Binding FileList}" DoubleTapped="InputElement_OnDoubleTapped">
         <ListBox.ItemTemplate>
             <DataTemplate>
