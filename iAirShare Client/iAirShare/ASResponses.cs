@@ -5,8 +5,8 @@ namespace iAirShare_Client.iAirShare;
 
 public class ASResponse
 {
-    public JObject data;
-    public string msg;
+    public JObject? data;
+    public string? msg;
     public int status;
 }
 

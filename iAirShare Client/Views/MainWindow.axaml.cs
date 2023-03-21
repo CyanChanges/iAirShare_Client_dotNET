@@ -1,10 +1,13 @@
 using System;
+using System.Collections.ObjectModel;
 using System.Net;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using DynamicData.Kernel;
 using iAirShare_Client.iAirShare;
 using iAirShare_Client.Models;
 using iAirShare_Client.ViewModels;
+using Button = FluentAvalonia.UI.Controls.Button;
 
 namespace iAirShare_Client.Views;
 
@@ -19,18 +22,18 @@ public partial class MainWindow : Window
         var asFiles = client.ListDirectory();
         foreach (var asFile in asFiles)
             if (asFile.file_type != ASFileType.Null)
-                MainWindowModel.FileList.Add(asFile);
+                MainWindowModel.files.Add(asFile);
     }
 
     private void InputElement_OnDoubleTapped(object? sender, RoutedEventArgs e)
     {
-        if ((sender as ListBox).SelectedIndex == -1) return;
-        var selectedItem = (sender as ListBox).SelectedItem as ASFile?;
+        if (((sender as ListBox)!).SelectedIndex == -1) return;
+        var selectedItem = (sender as ListBox)?.SelectedItem as ASFile?;
         if (selectedItem?.file_type == ASFileType.directory)
         {
-            client.ChangeDirectory(selectedItem?.file_name);
-
-            (DataContext as MainWindowViewModel).FileList = client.ListDirectory();
+            if (selectedItem?.file_name != null) client.ChangeDirectory(selectedItem?.file_name);
+            else return;
+            (DataContext as MainWindowViewModel)!.FileList = new ObservableCollection<ASFile>(client.ListDirectory());
         }
         else
         {
@@ -47,8 +50,19 @@ public partial class MainWindow : Window
             {
                 Console.WriteLine($"Download Complete!");
             };
-            
-            webClient.DownloadFileAsync(this.client.GetFileUriBuilder(((sender as ListBox).SelectedItem as ASFile?)?.file_name).Uri, ((sender as ListBox).SelectedItem as ASFile?)?.file_name);
+
+            var fileName = ((sender as ListBox)!.SelectedItem as ASFile?)?.file_name;
+            if (fileName != null)
+                webClient.DownloadFileAsync(
+                    this.client.GetFileUriBuilder(fileName).Uri,
+                    fileName);
         }
+    }
+
+    private void InputElement_OnTapped(object? sender, RoutedEventArgs e)
+    {
+        (sender as Button)!.IsEnabled = false;
+        (DataContext as MainWindowViewModel)!.FileList = new ObservableCollection<ASFile>(client.ListDirectory());
+        (sender as Button)!.IsEnabled = true;
     }
 }

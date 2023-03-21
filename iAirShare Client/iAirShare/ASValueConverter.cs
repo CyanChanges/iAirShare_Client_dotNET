@@ -6,7 +6,7 @@ namespace iAirShare_Client.iAirShare;
 
 public class TimestampConverter : IValueConverter
 {
-    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    public object Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
         // Check if value is a double type
         if (value is float timestamp)
@@ -24,10 +24,10 @@ public class TimestampConverter : IValueConverter
         }
 
         // Return null if conversion fails
-        return null;
+        return null!;
     }
 
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    public object ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
         // Check if value is a string type
         if (value is string text)
@@ -40,34 +40,35 @@ public class TimestampConverter : IValueConverter
                     return new DateTimeOffset(dateTime).ToUnixTimeSeconds();
 
         // Return null if conversion fails
-        return null;
+        return null!;
     }
 }
 
 public class ByteSizeConverter : IValueConverter
 {
-    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    public object Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
-        if (value is ulong bytes2)
+        if (value is ulong bytes)
         {
             string[] suffixes = { "Byte(s)", "KiB", "MiB", "GiB", "TiB", "PiB" };
             var counter = 0;
-            double number = bytes2;
+            double number = bytes;
             while (Math.Round(number / 1024) >= 1)
             {
                 number /= 1024;
                 counter++;
             }
 
-            if (counter >= suffixes.Length) counter = suffixes.Length - 1;
-
+            if (counter < suffixes.Length) return $"{number:0.##} {suffixes[counter]}";
+            counter = suffixes.Length - 1;
             return $"{number:0.##} {suffixes[counter]}";
+
         }
 
-        return null;
+        return null!;
     }
 
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    public object ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
         throw new NotImplementedException();
     }

@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net;
 using System.Net.Http;
 using Newtonsoft.Json;
 
@@ -61,17 +60,18 @@ public class ASClient : IDisposable
 
             var respMediaType = response.Content.Headers.ContentType?.MediaType;
             if (respMediaType != "application/json")
-                return null;
+                return null!;
 
             var resultResponse = JsonConvert
                 .DeserializeObject<ASDirResponse>(resultString);
 
             if (resultResponse?.status != 200)
-                return null;
+                return null!;
 
-            foreach (var file in resultResponse.data?.files)
-                if (file?.file_type != ASFileType.Null)
-                    result.Add(file.Value);
+            if (resultResponse.data?.files != null)
+                foreach (var file in resultResponse.data?.files!)
+                    if (file?.file_type != null && file.Value.file_type != ASFileType.Null)
+                        result.Add(file!.Value);
 
             d_next = resultResponse.data.HasValue ? resultResponse.data.Value.next : -114514;
         } while (d_next > 0);
@@ -109,7 +109,7 @@ public class ASClient : IDisposable
         var response = client.Send(request);
 
         if (response.Content.Headers.ContentType?.MediaType == "application/json")
-            return null;
+            return null!;
 
         return response.Content.ReadAsStream();
     }
