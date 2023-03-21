@@ -33,7 +33,7 @@
                         <Button Content="FileSize" Width="100" Command="{Binding SortBySize}" />
                         <Button Content="LastUpdateDate" Width="200" Command="{Binding SortByTime}" />
                     </StackPanel>
-                    <ListBox Items="{Binding MyFileList}">
+                    <ListBox Items="{Binding MyFileList.Inner}">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <Grid ColumnDefinitions="*,*,*">
